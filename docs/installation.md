@@ -62,7 +62,7 @@ nix \
     --extra-experimental-features flakes \
     --extra-experimental-features nix-command \
     run nix-darwin -- switch \
-    --flake github:nmasur/dotfiles#lookingglass
+    --flake github:nmasur/dotfiles#rkmbp
 ```
 
 Once installed, you can continue to update the macOS configuration:

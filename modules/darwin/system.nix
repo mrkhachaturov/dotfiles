@@ -99,7 +99,7 @@
             "/Applications/1Password.app"
             "${pkgs.slack}/Applications/Slack.app"
             "/System/Applications/Calendar.app"
-            "${pkgs.firefox-bin}/Applications/Firefox.app"
+            # "${pkgs.firefox-bin}/Applications/Firefox.app"
             "/System/Applications/Messages.app"
             "/System/Applications/Mail.app"
             "/Applications/zoom.us.app"

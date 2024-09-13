@@ -249,16 +249,16 @@
       };
 
       # Contains my full Mac system builds, including home-manager
-      # darwin-rebuild switch --flake .#lookingglass
+      # darwin-rebuild switch --flake .#rkmbp
       darwinConfigurations = {
-        lookingglass = import ./hosts/lookingglass { inherit inputs globals overlays; };
+        rkmbp = import ./hosts/rkmbp { inherit inputs globals overlays; };
       };
 
       # For quickly applying home-manager settings with:
       # home-manager switch --flake .#tempest
       homeConfigurations = {
         tempest = nixosConfigurations.tempest.config.home-manager.users.${globals.user}.home;
-        lookingglass = darwinConfigurations.lookingglass.config.home-manager.users."Noah.Masur".home;
+        rkmbp = darwinConfigurations.rkmbp.config.home-manager.users."mrkhachaturov".home;
       };
 
       # Disk formatting, only used once
