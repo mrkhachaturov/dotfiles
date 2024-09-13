@@ -55,7 +55,7 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 Launch a new shell. Then use Nix to switch to the macOS configuration:
 
 ```bash
-sudo mv /etc/zshrc /etc/zshrc.before-nix
+# sudo mv /etc/zshrc /etc/zshrc.before-nix
 sudo mv /etc/bashrc /etc/bashrc.before-nix
 sudo rm /etc/nix/nix.conf
 export NIX_SSL_CERT_FILE="$HOME/Documents/t2-ca-bundle.pem"
